@@ -60,7 +60,7 @@ a {
 body {
   font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ",
     Meiryo, "ＭＳ Ｐゴシック", sans-serif;
-  min-width: 375px;
+  background-color: #ffefd5;
 }
 
 * {
@@ -111,6 +111,7 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
+  position: absolute;
 }
 
 .toggle-list a {
