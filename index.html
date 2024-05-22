@@ -15,6 +15,10 @@
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/base.css" />
 
     <title>Casteria</title>
@@ -22,60 +26,149 @@
 
   <body>
     <div class="wrap">
-    <header class="header">
-      <div class="container-fluid">
+      <header class="header">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-6">
+              <h1 class="header-logo">Casteria</h1>
+            </div>
+            <div class="col-6">
+              <nav class="header-nav">
+                <div class="header-nav-item">
+                  <a
+                    href="#"
+                    style="text-decoration: none; color: darkgray"
+                    class="toggle-menu"
+                    id="hamburger-icon"
+                    >&#9776;</a
+                  >
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="container-fluid toggle-menu-list">
         <div class="row">
-          <div class="col-6">
-            <h1 class="header-logo">Casteria</h1>
-          </div>
-          <div class="col-6">
-            <nav class="header-nav">
-              <div class="header-nav-item">
-                <a href="#" style="text-decoration: none; color:darkgray" class="toggle-menu" id="hamburger-icon">&#9776;</a>
-              </div>
-            </nav>
+          <div class="col-12">
+            <ul class="toggle-list">
+              <li>
+                <a
+                  href="#home"
+                  class="header-nav-link"
+                  style="text-decoration: none"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#food"
+                  class="header-nav-link"
+                  style="text-decoration: none"
+                  >Food</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#drink"
+                  class="header-nav-link"
+                  style="text-decoration: none"
+                  >Drink</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="header-nav-link"
+                  style="text-decoration: none"
+                  >お問い合わせ</a
+                >
+              </li>
+              <li>
+                <form class="search" action="#" method="get">
+                  <input
+                    type="search"
+                    class="search_form"
+                    name="search"
+                    placeholder="search"
+                  />
+                  <input
+                    type="submit"
+                    class="search_btn"
+                    name="submit"
+                    value="search"
+                  />
+                </form>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-    </header>
 
-    <div class="container-fluid toggle-menu-list">
-      <div class="row ">
-        <div class="col-12">
-          <ul class="toggle-list">
-            <li><a href="#home" class="header-nav-link" style="text-decoration: none;">Home</a></li>
-            <li><a href="#food" class="header-nav-link" style="text-decoration: none;">Food</a></li>
-            <li><a href="#drink" class="header-nav-link" style="text-decoration: none;">Drink</a></li>
-            <li>
-              <a href="#contact" class="header-nav-link" style="text-decoration: none;">お問い合わせ</a>
-            </li>
-            <li>
-              <form class="search" action="#" method="get">
-                <input type="search" class="search_form" name="search" placeholder="search" />
-                <input type="submit" class="search_btn" name="submit" value="search" />
-              </form>
-            </li>
-          </ul>
+      <div class="swiper-parent">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                class="img-item"
+                src="./img/food.jpg"
+                alt="ムニエル"
+                width="453"
+                height="340"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="img-item"
+                src="./img/food2.jpg"
+                alt="パスタ"
+                width="881"
+                height="480"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="img-item"
+                src="./img/interior.jpg"
+                alt="インテリア"
+                width="1280"
+                height="853"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="img-item"
+                src="./img/restaurant.jpg"
+                alt="外装"
+                width="638"
+                height="480"
+              />
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-scrollbar"></div>
       </div>
 
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
-
-      
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./js/script.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"
+      ></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="./js/script.js"></script>
+    </div>
   </body>
 </html>

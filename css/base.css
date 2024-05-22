@@ -75,6 +75,7 @@ body {
   overflow: hidden;
 }
 
+/* ヘッダー */
 .header {
   background-color: lightgray;
   display: flex;
@@ -152,4 +153,24 @@ body {
   border-radius: 4px;
   border: none;
   margin-left: 5px;
+}
+
+/* スライドショー */
+.swiper-parent {
+  position: relative;
+}
+
+.swiper {
+  margin: 15px 30px;
+}
+
+.swiper-slide img {
+  height: 330px;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 18px;
+}
+
+.swiper-pagination .swiper-scrollbar {
+  position: absolute;
 }
