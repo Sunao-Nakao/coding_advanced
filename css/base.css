@@ -91,10 +91,6 @@ body {
   line-height: 38px;
 }
 
-.header-nav {
-  /* position: relative; */
-}
-
 .header-nav-item {
   display: flex;
   justify-content: right;
@@ -173,4 +169,39 @@ body {
 
 .swiper-pagination .swiper-scrollbar {
   position: absolute;
+}
+
+/* コロナ対策案内 */
+.inner {
+  margin: 0 30px;
+}
+
+.notice__title {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.accordion__title {
+  background-color: #ffc7af;
+  width: 100%;
+  font-size: 20px;
+  text-align: left;
+  border: none;
+  padding: 10px;
+  margin-bottom: 1px;
+  outline: none !important;
+}
+
+.accordion__content {
+  font-size: 10px;
+  line-height: 2.5;
+  margin-bottom: 10px;
+  display: none;
+}
+
+.accordion__content li {
+  list-style-type: disc;
+  margin-left: 15px;
+  margin-right: 5px;
+  text-align: left;
 }

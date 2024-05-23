@@ -22,3 +22,8 @@ const swiper = new Swiper(".swiper", {
     el: ".swiper-scrollbar",
   },
 });
+
+// コロナ対応アコーディオン
+$(".js-accordion").on("click", function () {
+  $(this).next().slideToggle();
+});
