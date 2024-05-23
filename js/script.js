@@ -27,3 +27,18 @@ const swiper = new Swiper(".swiper", {
 $(".js-accordion").on("click", function () {
   $(this).next().slideToggle();
 });
+
+$(function () {
+  $(window).scroll(function () {
+    $(".fadein").each(function () {
+      var position = $(this).offset().top;
+      var scroll = $(window).scrollTop();
+      var windowHeight = $(window).height();
+      if (scroll > position - windowHeight + 200) {
+        $(this).addClass("active");
+      } else {
+        $(this).removeClass("active");
+      }
+    });
+  });
+});
