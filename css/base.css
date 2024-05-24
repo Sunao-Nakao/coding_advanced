@@ -295,6 +295,15 @@ body {
   transform: translate(0, 0);
 }
 
+/* 店舗一覧（非表示） */
+.store-list {
+  display: none;
+}
+
+.store-items {
+  display: none;
+}
+
 /* タブレット、PCサイズ */
 @media screen and (min-width: 768px) {
   /* ヘッダー */
@@ -332,6 +341,10 @@ body {
     margin: 30px 100px;
   }
 
+  .accordion__content {
+    font-size: 14px;
+  }
+
   /* セクション共通 */
   .section {
     padding: 0 100px;
@@ -353,5 +366,84 @@ body {
 
   .section__text {
     font-size: 18px;
+  }
+
+  /* アドレス */
+  .section__head-l {
+    font-size: 22px;
+  }
+
+  .section__contents-l {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px;
+  }
+
+  .section__text-l {
+    font-size: 12px;
+  }
+
+  /* 店舗一覧 */
+  .store {
+    margin: 50px 100px;
+  }
+
+  .store-list {
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .store-items {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .store-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .store-img {
+    object-fit: cover;
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+    width: 200px;
+    height: 200px;
+  }
+
+  .store-address {
+    display: flex;
+    font-size: 12px;
+    margin-top: 5px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* フッター */
+  .footer__list-link {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .store-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+
+  .store-img {
+    object-fit: cover;
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+    width: 300px;
+    height: 300px;
   }
 }
