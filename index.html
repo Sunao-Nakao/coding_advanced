@@ -28,85 +28,87 @@
     <div class="wrap">
       <!-- ヘッダー -->
       <header class="header">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-6">
-              <h1 class="header-logo">Casteria</h1>
+        <div class="header-item">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-6">
+                <h1 class="header-logo">Casteria</h1>
+              </div>
+              <div class="col-6">
+                <nav class="header-nav">
+                  <div class="header-nav-item">
+                    <a
+                      href="#"
+                      style="text-decoration: none; color: darkgray"
+                      class="toggle-menu"
+                      id="hamburger-icon"
+                      >&#9776;</a
+                    >
+                  </div>
+                </nav>
+              </div>
             </div>
-            <div class="col-6">
-              <nav class="header-nav">
-                <div class="header-nav-item">
+          </div>
+        </div>
+
+        <!-- ハンバーガーメニュー -->
+        <div class="container-fluid toggle-menu-list">
+          <div class="row">
+            <div class="col-12">
+              <ul class="toggle-list">
+                <li>
                   <a
-                    href="#"
-                    style="text-decoration: none; color: darkgray"
-                    class="toggle-menu"
-                    id="hamburger-icon"
-                    >&#9776;</a
+                    href="#home"
+                    class="header-nav-link"
+                    style="text-decoration: none"
+                    >Home</a
                   >
-                </div>
-              </nav>
+                </li>
+                <li>
+                  <a
+                    href="#food"
+                    class="header-nav-link"
+                    style="text-decoration: none"
+                    >Food</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#drink"
+                    class="header-nav-link"
+                    style="text-decoration: none"
+                    >Drink</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#contact"
+                    class="header-nav-link"
+                    style="text-decoration: none"
+                    >お問い合わせ</a
+                  >
+                </li>
+                <li>
+                  <form class="search" action="#" method="get">
+                    <input
+                      type="search"
+                      class="search_form"
+                      name="search"
+                      placeholder="search"
+                    />
+                    <input
+                      type="submit"
+                      class="search_btn"
+                      name="submit"
+                      value="search"
+                    />
+                  </form>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </header>
-
-      <!-- ハンバーガーメニュー -->
-      <div class="container-fluid toggle-menu-list">
-        <div class="row">
-          <div class="col-12">
-            <ul class="toggle-list">
-              <li>
-                <a
-                  href="#home"
-                  class="header-nav-link"
-                  style="text-decoration: none"
-                  >Home</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#food"
-                  class="header-nav-link"
-                  style="text-decoration: none"
-                  >Food</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#drink"
-                  class="header-nav-link"
-                  style="text-decoration: none"
-                  >Drink</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#contact"
-                  class="header-nav-link"
-                  style="text-decoration: none"
-                  >お問い合わせ</a
-                >
-              </li>
-              <li>
-                <form class="search" action="#" method="get">
-                  <input
-                    type="search"
-                    class="search_form"
-                    name="search"
-                    placeholder="search"
-                  />
-                  <input
-                    type="submit"
-                    class="search_btn"
-                    name="submit"
-                    value="search"
-                  />
-                </form>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
 
       <!-- スライダー -->
       <div class="swiper-parent">
@@ -219,18 +221,20 @@
       <section id="food" class="section food fadein">
         <div class="section__inner">
           <h2 class="section__head">Signature Food</h2>
-          <div class="img-container">
-            <img
-              class="section__img"
-              src="./img/food.jpg"
-              alt="サーモンステーキ"
-              width="453"
-              height="340"
-            />
+          <div class="section__contents">
+            <div class="img-container">
+              <img
+                class="section__img"
+                src="./img/food.jpg"
+                alt="サーモンステーキ"
+                width="453"
+                height="340"
+              />
+            </div>
+            <p class="section__text">
+              サーモンは刺身やカルパッチョで食べるのが美味しいですが、リッチな気分になれるサーモンステーキがおすすめです。<br />サーモンの美味しさを引き立てる２種のソースも絶品です！
+            </p>
           </div>
-          <p class="section__text">
-            サーモンは刺身やカルパッチョで食べるのが美味しいですが、リッチな気分になれるサーモンステーキがおすすめです。<br />サーモンの美味しさを引き立てる２種のソースも絶品です！
-          </p>
         </div>
       </section>
 
@@ -238,37 +242,41 @@
       <section id="drink" class="section drink fadein">
         <div class="section__inner">
           <h2 class="section__head">Our Coffee</h2>
-          <div class="img-container">
-            <img
-              class="section__img"
-              src="./img/barista.jpg"
-              alt="コーヒー"
-              width="720"
-              height="480"
-            />
+          <div class="section__contents">
+            <div class="img-container">
+              <img
+                class="section__img"
+                src="./img/barista.jpg"
+                alt="コーヒー"
+                width="720"
+                height="480"
+              />
+            </div>
+            <p class="section__text">
+              当店のコーヒー豆は激戦して世界中から買い付けています。そして、そのコーヒー豆の美味しさを最大限に引き出すために自社のロースタリーで焙煎しています。
+            </p>
           </div>
-          <p class="section__text">
-            当店のコーヒー豆は激戦して世界中から買い付けています。そして、そのコーヒー豆の美味しさを最大限に引き出すために自社のロースタリーで焙煎しています。
-          </p>
         </div>
       </section>
 
-      <!-- フードセクション -->
+      <!-- 素材セクション -->
       <section id="" class="section our-food fadein">
         <div class="section__inner">
           <h2 class="section__head">Our Food</h2>
-          <div class="img-container">
-            <img
-              class="section__img"
-              src="./img/food3.jpg"
-              alt="素材"
-              width="612"
-              height="408"
-            />
+          <div class="section__contents">
+            <div class="img-container">
+              <img
+                class="section__img"
+                src="./img/food3.jpg"
+                alt="素材"
+                width="612"
+                height="408"
+              />
+            </div>
+            <p class="section__text">
+              当店は何よりまずは衛生管理に気をつけています。「安全・安心」をお届けするために日々継続的な努力を惜しみません。
+            </p>
           </div>
-          <p class="section__text">
-            当店は何よりまずは衛生管理に気をつけています。「安全・安心」をお届けするために日々継続的な努力を惜しみません。
-          </p>
         </div>
       </section>
 
@@ -276,22 +284,24 @@
       <section id="address" class="section address fadein">
         <div class="section__inner-l">
           <h2 class="section__head-l">Address</h2>
-          <p class="section__text-l">
-            681 xxx Drive, xxxxx xxxx #01 - 06 000000
-          </p>
-          <p class="section__text-l">Opening Hours</p>
-          <h2 class="section__head-l">Mondays - Friday:10am - 9pm</h2>
-          <p class="section__text-l">
-            Saturdays,Sundays & Public Holidays: 9am - 9pm
-          </p>
-          <div class="img-container">
-            <img
-              class="section__img"
-              src="./img/barista.jpg"
-              alt="バリスタ"
-              width="720"
-              height="480"
-            />
+          <div class="section__contents">
+            <p class="section__text-l">
+              681 xxx Drive, xxxxx xxxx #01 - 06 000000
+            </p>
+            <p class="section__text-l">Opening Hours</p>
+            <h2 class="section__head-l">Mondays - Friday:10am - 9pm</h2>
+            <p class="section__text-l">
+              Saturdays,Sundays & Public Holidays: 9am - 9pm
+            </p>
+            <div class="img-container">
+              <img
+                class="section__img"
+                src="./img/barista.jpg"
+                alt="バリスタ"
+                width="720"
+                height="480"
+              />
+            </div>
           </div>
         </div>
       </section>

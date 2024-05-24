@@ -76,7 +76,7 @@ body {
 }
 
 /* ヘッダー */
-.header {
+.header-item {
   background-color: lightgray;
   display: flex;
   justify-content: space-between;
@@ -95,6 +95,16 @@ body {
   display: flex;
   justify-content: right;
   text-align: center;
+}
+
+.header-nav-link {
+  font-size: 15px;
+  color: gray;
+  line-height: 2;
+}
+
+.header-nav-link:hover {
+  color: black;
 }
 
 .toggle-menu {
@@ -121,16 +131,6 @@ body {
   background-color: lightgray;
   width: 100%;
   padding: 5px 15px 10px 15px;
-}
-
-.header-nav-link {
-  font-size: 15px;
-  color: gray;
-  line-height: 2;
-}
-
-.header-nav-link:hover {
-  color: black;
 }
 
 .search {
@@ -293,4 +293,65 @@ body {
 .fadein.active {
   opacity: 1;
   transform: translate(0, 0);
+}
+
+/* タブレット、PCサイズ */
+@media screen and (min-width: 768px) {
+  /* ヘッダー */
+  .header {
+    display: flex;
+  }
+
+  .header-logo {
+    float: left;
+    font-size: 35px;
+  }
+
+  .header-nav-item {
+    display: none;
+    float: right;
+  }
+
+  .toggle-list {
+    display: flex;
+    padding: 10px;
+    justify-content: right;
+  }
+
+  .header-nav-link {
+    padding: 10px;
+  }
+
+  /* スライダー */
+  .swiper {
+    margin: 0;
+  }
+
+  /* コロナ対策 */
+  .inner {
+    margin: 30px 100px;
+  }
+
+  /* セクション共通 */
+  .section {
+    padding: 0 100px;
+  }
+
+  .section__head {
+    font-size: 22px;
+  }
+
+  .section__contents {
+    display: flex;
+    gap: 30px;
+  }
+
+  .img-container {
+    max-width: 50%;
+    min-width: 50%;
+  }
+
+  .section__text {
+    font-size: 18px;
+  }
 }
