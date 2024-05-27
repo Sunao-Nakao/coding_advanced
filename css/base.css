@@ -1,0 +1,449 @@
+@charset "UTF-8";
+/* reset */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+address,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+img,
+form,
+table,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100%;
+  text-align: left;
+  list-style-type: none;
+  border-collapse: collapse;
+}
+
+textarea {
+  font-size: 100%;
+  vertical-align: middle;
+}
+img {
+  border-style: none;
+  display: block;
+}
+hr {
+  display: none;
+}
+em {
+  font-style: normal;
+}
+input {
+  line-height: auto;
+  vertical-align: middle;
+}
+strong.more {
+  color: #c30;
+}
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ",
+    Meiryo, "ＭＳ Ｐゴシック", sans-serif;
+  background-color: #ffefd5;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.wrap {
+  overflow: hidden;
+}
+
+/* ヘッダー */
+.header-item {
+  background-color: lightgray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+  position: relative;
+}
+
+.header-logo {
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 38px;
+}
+
+.header-nav-item {
+  display: flex;
+  justify-content: right;
+  text-align: center;
+}
+
+.header-nav-link {
+  font-size: 15px;
+  color: gray;
+  line-height: 2;
+}
+
+.header-nav-link:hover {
+  color: black;
+}
+
+.toggle-menu {
+  padding-bottom: 6px;
+  display: block;
+  color: darkgray;
+  border: solid 1px darkgray;
+  border-radius: 4px;
+  font-size: 30px;
+  width: 50px;
+  line-height: 30px;
+}
+
+.toggle-menu-list {
+  padding: 0;
+  margin: 0;
+}
+
+.toggle-list {
+  list-style: none;
+  margin: 0 auto;
+  text-align: left;
+  display: none;
+  background-color: lightgray;
+  width: 100%;
+  padding: 5px 15px 10px 15px;
+}
+
+.search {
+  display: flex;
+  width: 100%;
+}
+
+.search_form {
+  flex-grow: 1;
+  border-radius: 4px;
+  border: none;
+}
+
+.search_btn {
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: none;
+  margin-left: 5px;
+}
+
+/* スライドショー */
+.swiper-parent {
+  position: relative;
+}
+
+.swiper {
+  margin: 15px 30px;
+}
+
+.swiper-slide img {
+  height: 330px;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 18px;
+}
+
+.swiper-pagination .swiper-scrollbar {
+  position: absolute;
+}
+
+/* コロナ対策案内 */
+.inner {
+  margin: 0 30px;
+}
+
+.notice__title {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.accordion__title {
+  background-color: #ffc7af;
+  width: 100%;
+  font-size: 20px;
+  text-align: left;
+  border: none;
+  padding: 10px;
+  margin-bottom: 1px;
+  outline: none !important;
+}
+
+.accordion__content {
+  font-size: 10px;
+  line-height: 2.5;
+  margin-bottom: 10px;
+  display: none;
+}
+
+.accordion__content li {
+  list-style-type: disc;
+  margin-left: 15px;
+  margin-right: 5px;
+  text-align: left;
+}
+
+/* セクション共通パーツ */
+.section {
+  padding: 0 30px;
+}
+
+.section__inner {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.section__head {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 50px 0 20px 5px;
+}
+
+.img-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.section__img {
+  width: 100%;
+  height: auto;
+}
+
+.section__text {
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+/* アドレス＆時間 */
+.address {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.section__inner-l {
+  background-color: black;
+  color: #fff;
+}
+
+.section__head-l {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 20px 0 20px 10px;
+}
+
+.section__text-l {
+  font-size: 10px;
+  padding: 0 0 20px 5px;
+}
+
+/* フッター */
+.footer {
+  background-color: darkgray;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__list {
+  display: flex;
+  list-style: none;
+}
+
+.footer__list-item {
+  flex: auto;
+}
+
+.footer__list-link {
+  padding: 0 10px;
+  font-size: 10px;
+  color: black;
+  text-decoration: none;
+}
+
+.fadein {
+  opacity: 0;
+  transform: translate(0, 100px);
+  transition: all 1s;
+}
+
+.fadein.active {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/* 店舗一覧（非表示） */
+.store-list {
+  display: none;
+}
+
+.store-items {
+  display: none;
+}
+
+/* タブレット、PCサイズ */
+@media screen and (min-width: 768px) {
+  /* ヘッダー */
+  .header {
+    display: flex;
+  }
+
+  .header-logo {
+    float: left;
+    font-size: 35px;
+  }
+
+  .header-nav-item {
+    display: none;
+    float: right;
+  }
+
+  .toggle-list {
+    display: flex;
+    padding: 10px;
+    justify-content: right;
+  }
+
+  .header-nav-link {
+    padding: 10px;
+  }
+
+  /* スライダー */
+  .swiper {
+    margin: 0;
+  }
+
+  /* コロナ対策 */
+  .inner {
+    margin: 30px 100px;
+  }
+
+  .accordion__content {
+    font-size: 14px;
+  }
+
+  /* セクション共通 */
+  .section {
+    padding: 0 100px;
+  }
+
+  .section__head {
+    font-size: 22px;
+  }
+
+  .section__contents {
+    display: flex;
+    gap: 30px;
+  }
+
+  .img-container {
+    max-width: 50%;
+    min-width: 50%;
+  }
+
+  .section__text {
+    font-size: 18px;
+  }
+
+  /* アドレス */
+  .section__head-l {
+    font-size: 22px;
+  }
+
+  .section__contents-l {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px;
+  }
+
+  .section__text-l {
+    font-size: 12px;
+  }
+
+  /* 店舗一覧 */
+  .store {
+    margin: 50px 100px;
+  }
+
+  .store-list {
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .store-items {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .store-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .store-img {
+    object-fit: cover;
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+    width: 200px;
+    height: 200px;
+  }
+
+  .store-address {
+    display: flex;
+    font-size: 12px;
+    margin-top: 5px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* フッター */
+  .footer__list-link {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .store-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+
+  .store-img {
+    object-fit: cover;
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+    width: 300px;
+    height: 300px;
+  }
+}
